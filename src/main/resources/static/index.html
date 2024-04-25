@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel ="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>oblig3</title>
+    <script src="oblig3.js"></script>
+</head>
+<body>
+<h1>Bestilling av kinobiletter</h1>
+
+<table>
+    <tr>
+        <th> Velg film: </th>
+        <td>
+            <select id="filmer">
+                <option>Velg Film </option>
+                <option>
+                    Barbie</option>
+                <option> Spiderman</option>
+                <option> Batman</option> //3 filmer å velge mellom
+            </select>
+
+            <div id = "Feilfilm"></div>
+        </td>
+
+    </tr>
+
+
+    <tr>
+        <th> Antall</th>
+        <td>
+            <input type="text" id="ANTALL" style="width: 20px;" />
+
+            <div id ="Feilantall" > </div>
+        </td>
+    </tr>
+
+
+    <tr>
+        <th> Fornavn</th>
+        <td>
+            <input type="text" id="FORNAVN" />
+
+            <div id ="Feilfornavn" > </div>
+        </td>
+    </tr>
+
+    <tr>
+        <th> Etternavn</th>
+        <td>
+            <input type="text" id="ETTERNAVN" />
+
+            <div id ="Feiletternavn" > </div>
+        </td>
+    </tr>
+    <tr>
+        <th> Telefonnr</th>
+        <td>
+            <input type="text" id="tlf" />
+
+            <div id ="Feiltlfnr" > </div>
+        </td>
+    </tr>
+
+    <tr>
+        <th> Epost</th>
+        <td>
+            <input type="text" id="EPOST" />
+
+            <div id ="Feilepost" > </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td> <button onclick="Billettkjop()">Kjøp billett</button> </td>
+    </tr>
+
+</table>
+
+<h2> Alle billetter</h2>
+<div id="Billettkjop"></div>
+
+
+<button onclick="slettAlle()" >Slett alle billettene</button>
+
+</body>
+</html>
